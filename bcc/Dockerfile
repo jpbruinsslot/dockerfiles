@@ -12,5 +12,4 @@ WORKDIR /usr/share/bcc/tools
 ENV PATH="/usr/share/bcc/tools:${PATH}"
 
 # Set a flexible entrypoint to execute tools dynamically
-ENTRYPOINT ["sh", "-c"]
-CMD []
+ENTRYPOINT ["/bin/sh", "-c"]
